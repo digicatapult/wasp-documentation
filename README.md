@@ -8,10 +8,6 @@
 - Threshold setting and events
 - Tracking events when assets move between locations
 
-## Quick-start
-
-The latest version of WASP is deployed via a Kubernetes based infrastructure. Documentation for getting up and running with this can be found in the [wasp-k8s-infra](https://github.com/digicatapult/wasp-k8s-infra/) repository
-
 ## READMEs
 
 This repo includes READMEs that explain concepts within WASP:
@@ -25,7 +21,7 @@ This repo includes READMEs that explain concepts within WASP:
 
 ### Active WASP repositories
 
-These repositories contain code being actively maintained as part of the wasp project
+These repositories contain code being actively maintained as part of the WASP project.
 
 | Repository                                                                                    | Description                                                                                                            |
 | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -48,53 +44,15 @@ These repositories contain code being actively maintained as part of the wasp pr
 | [wasp-ingest-http](https://github.com/digicatapult/wasp-ingest-http)                           | WASP Ingest for that accepts new messages via HTTP POST from a gateway service                                         |
 | [wasp-payload-parser-template](https://github.com/digicatapult/wasp-payload-parser-template)   | Template repository for bootstrapping new WASP payload parsers                                                         |
 | [wasp-payload-processor](https://github.com/digicatapult/wasp-payload-processor)               | Service builder for WASP payload processors                                                                            |
-| [wasp-thingy91](https://github.com/digicatapult/wasp-thingy91)                                 | A payload processing service for Thingy91 devices                                                                      |
-| [wasp-payload-parser-oyster2](https://github.com/digicatapult/wasp-payload-parser-oyster2)     | A payload processing service for Digital Matter Oyster2 devices                                                        |
-| [wasp-deti-power](https://github.com/digicatapult/wasp-deti-power)                             | A payload processing service for Schneider Electric power meters                                                       |
-| [wasp-database](https://github.com/digicatapult/wasp-database)                                 | Database component for the WASP platform                                                                               |
+| [wasp-thingy91](https://github.com/digicatapult/wasp-thingy91)                                 | A payload parsing service for Thingy91 devices                                                                      |
+| [wasp-payload-parser-oyster2](https://github.com/digicatapult/wasp-payload-parser-oyster2)     | A payload parsing service for Digital Matter Oyster2 devices                                                        |
+| [wasp-deti-power](https://github.com/digicatapult/wasp-deti-power)                             | A payload parsing service for Schneider Electric power meters                                                       |
 | [resolver-cache-datasource](https://github.com/digicatapult/resolver-cache-datasource)         | Resolver caching DataSource for Apollo GraphQL projects                                                                |
 | [apollo-type-validation-plugin](https://github.com/digicatapult/apollo-type-validation-plugin) | Directive base type validations for GraphQL queries                                                                    |
-| [wasp-k8s-tf](https://github.com/digicatapult/wasp-k8s-tf)                                     | Terraform HCL for deploying a new WASP Kubernetes cluster                                                              |
-| [wasp-k8s-infra](https://github.com/digicatapult/wasp-k8s-infra)                               | FluxCD deployment repo for WASP                                                                                        |
-| [wasp-cluster](https://github.com/digicatapult/wasp-cluster)                                   | k8s cluster dependencies for WASP                                                                                      |
-
-### Outdated payload processor repositories
-
-These repositories contain payload processor code used in WASP v1. These are now outdated but could be straightforwardly upgraded to be supported by WASP v2.
-
-| Repository                                                                                          | Description                                      |
-| --------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| [wasp-ewattch-energy-sensor](https://github.com/digicatapult/wasp-ewattch-energy-sensor)             | Tyness eWatch Energy sensor extension for WASP   |
-| [wasp-ztrack-pro-sensor](https://github.com/digicatapult/wasp-ztrack-pro-sensor)                     | Zane zTrack Pro sensor extension for WASP        |
-| [wasp-tektelic-agriculture-sensor](https://github.com/digicatapult/wasp-tektelic-agriculture-sensor) | Tektelic Argricultural sensor extension for WASP |
-| [wasp-elsys-elt-ultrasonic-sensor](https://github.com/digicatapult/wasp-elsys-elt-ultrasonic-sensor) | Elsys ELT Ultrasonic sensor extension for WASP   |
-| [wasp-dl-smtp-soil-sensor](https://github.com/digicatapult/wasp-dl-smtp-soil-sensor)                 | DecentLab DL-SMTP sensor extension for WASP      |
-| [wasp-dl-5tm-soil-sensor](https://github.com/digicatapult/wasp-dl-5tm-soil-sensor)                   | DecentLab DL-5TM sensor extension for WASP       |
-| [wasp-dl-atm41-weather-sensor](https://github.com/digicatapult/wasp-dl-atm41-weather-sensor)         | DecentLabs ATM41 sensor extension for WASP       |
-| [wasp-dl-atm22-wind-sensor](https://github.com/digicatapult/wasp-dl-atm22-wind-sensor)               | DecentLabs ATM22 sensor extension for WASP       |
-| [wasp-dl-mbx-ultrasonic-sensor](https://github.com/digicatapult/wasp-dl-mbx-ultrasonic-sensor)       | DecentLab DL-MBX sensor extension for WASP       |
-
-### Deprecated repositories from WASP v1
-
-These repositories are documented here for posterity but are otherwise redundant or so out of date as to justify being entirely rewritten.
-
-| Repository                                                                            | Description                                                                                  |
-| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [wasp-infrastructure](https://github.com/digicatapult/wasp-infrastructure)             | Terraform HCL for WASP v1                                                                    |
-| [wasp-client](https://github.com/digicatapult/wasp-client)                             | Web client for WASP v1                                                                       |
-| [wasp-packet-forwarder](https://github.com/digicatapult/wasp-packet-forwarder)         | Ingest service for WASP v1                                                                   |
-| [wasp-siconia-omni](https://github.com/digicatapult/wasp-siconia-omni)                 | WASP sensor extension supporting Sagemcom Siconia sensors programmed with DC "omni" firmware |
-| [wasp-csv-global-generator](https://github.com/digicatapult/wasp-csv-global-generator) | CSV download generator for WASP v1                                                           |
-| [wasp-siconia](https://github.com/digicatapult/wasp-siconia)                           | Repo for Sagemcom Siconia devices                                                            |
-| [wasp-ttn-cli-wrapper](https://github.com/digicatapult/wasp-ttn-cli-wrapper)           | Proxy service for ttn v3 cli                                                                 |
-| [wasp-ar](https://github.com/digicatapult/wasp-ar)                                     | AR experiment using WASP v1                                                                  |
-| [wasp-client-assets](https://github.com/digicatapult/wasp-client-assets)               | repo for per-client assets used in deployed WASP                                             |
 
 ## Contributing
 
 If you want to contribute to `WASP` that's brilliant! First of all have a look at our contributor guidelines [here](./CONTRIBUTING.md).
-
-If you want to contribute code changes you'll need to get a valid development setup by following the instructions in the [wasp-k8s-infra](https://github.com/digicatapult/wasp-k8s-infra/) repository.
 
 ## Lingo
 
