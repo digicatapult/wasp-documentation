@@ -12,15 +12,16 @@ See [architecture](./architecture.md). Payload parsing is located in box 4.
 
 ## Parsers
 
-| Repository                                                            | Description               |
-| --------------------------------------------------------------------- | ------------------------- |
-| [wasp-thingy91](https://github.com/digicatapult/wasp-thingy91)         | A payload processing service for Thingy91 devices               |
-| [wasp-deti-power](https://github.com/digicatapult/wasp-deti-power)     | A payload processing service for Schneider Electric power meters|
+| Repository                                                                                 | Description                                                     |
+| ------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| [wasp-thingy91](https://github.com/digicatapult/wasp-thingy91)                             | A payload parsing service for Thingy91 devices               |
+| [wasp-deti-power](https://github.com/digicatapult/wasp-deti-power)                         | A payload parsing service for Schneider Electric power meters|
+| [wasp-payload-parser-oyster2](https://github.com/digicatapult/wasp-payload-parser-oyster2) | A payload parsing service for Digital Matter Oyster2 devices |
 
 ## Templates and builders
 
-| Repository                                                                                  | Description               |
-| ------------------------------------------------------------------------------------------- | ------------------------- |
+| Repository                                                                                   | Description               |
+| -------------------------------------------------------------------------------------------- | ------------------------- |
 | [wasp-payload-parser-template](https://github.com/digicatapult/wasp-payload-parser-template) | Template repository for bootstrapping new WASP payload parsers|
 | [wasp-payload-processor](https://github.com/digicatapult/wasp-payload-processor)             | Service builder for WASP payload parsers (used in template)   |
 
@@ -62,6 +63,7 @@ buildService({
           thingId,
           type: 'temperature',
           label: 'dataset-label-if-any',
+          unit: '°C',
         },
         timestamp,
         value: asBuffer[0],

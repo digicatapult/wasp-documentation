@@ -9,11 +9,13 @@ See [architecture](./architecture.md). Ingest is located in box 2.
 
 # Active WASP ingest repositories
 
-| Repository                                                                          | Description               |
-| ----------------------------------------------------------------------------------- | ------------------------- |
-| [wasp-ingest-mqtt](https://github.com/digicatapult/wasp-ingest-mqtt)                 | MQTT ingest for WASP      |
-| [wasp-ingest-ttn](https://github.com/digicatapult/wasp-ingest-ttn)                   | WASP Ingest for TTN v2    |
-| [wasp-ingest-nordic-cloud](https://github.com/digicatapult/wasp-ingest-nordic-cloud) | WASP Ingest for nRF Cloud |
+| Repository                                                                           | Description                                     |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| [wasp-ingest-mqtt](https://github.com/digicatapult/wasp-ingest-mqtt)                 | WASP ingest for MQTT                            |
+| [wasp-ingest-ttn](https://github.com/digicatapult/wasp-ingest-ttn)                   | WASP ingest for TTN v2                          |
+| [wasp-ingest-nordic-cloud](https://github.com/digicatapult/wasp-ingest-nordic-cloud) | WASP ingest for nRF Cloud                       |
+| [wasp-ingest-http](https://github.com/digicatapult/wasp-ingest-http)                 | WASP ingest via HTTP POST from a gateway service|
+
 
 
 # Writing a new ingest
