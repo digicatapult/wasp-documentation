@@ -23,11 +23,9 @@ This repo includes READMEs that explain concepts within WASP:
 
 These repositories contain code being actively maintained as part of the WASP project.
 
-| Repository                                                                                    | Description                                                                                                            |
-| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Repository                                                                                     | Description                                                                                                            |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [wasp-documentation](https://github.com/digicatapult/wasp-documentation)                       | Documentation for WASP platform                                                                                        |
-| [wasp-service-template](https://github.com/digicatapult/wasp-service-template)                 | Template repository for building new WASP services                                                                     |
-| [wasp-testing](https://github.com/digicatapult/wasp-testing)                                   | Platform tests for WASP                                                                                                |
 | [wasp-thing-service](https://github.com/digicatapult/wasp-thing-service)                       | Thing service for WASP                                                                                                 |
 | [wasp-user-service](https://github.com/digicatapult/wasp-user-service)                         | User service for WASP                                                                                                  |
 | [wasp-reading-service](https://github.com/digicatapult/wasp-reading-service)                   | Readings service for WASP                                                                                              |
@@ -41,14 +39,22 @@ These repositories contain code being actively maintained as part of the WASP pr
 | [wasp-ingest-mqtt](https://github.com/digicatapult/wasp-ingest-mqtt)                           | MQTT ingest for WASP                                                                                                   |
 | [wasp-ingest-ttn](https://github.com/digicatapult/wasp-ingest-ttn)                             | WASP Ingest for TTN v2                                                                                                 |
 | [wasp-ingest-nordic-cloud](https://github.com/digicatapult/wasp-ingest-nordic-cloud)           | WASP Ingest for nRF Cloud                                                                                              |
-| [wasp-ingest-http](https://github.com/digicatapult/wasp-ingest-http)                           | WASP Ingest that accepts new messages via HTTP POST from a gateway service                                         |
-| [wasp-payload-parser-template](https://github.com/digicatapult/wasp-payload-parser-template)   | Template repository for bootstrapping new WASP payload parsers                                                         |
+| [wasp-ingest-http](https://github.com/digicatapult/wasp-ingest-http)                           | WASP Ingest that accepts new messages via HTTP POST from a gateway service                                             |
 | [wasp-payload-processor](https://github.com/digicatapult/wasp-payload-processor)               | Service builder for WASP payload processors                                                                            |
-| [wasp-thingy91](https://github.com/digicatapult/wasp-thingy91)                                 | A payload parsing service for Thingy91 devices                                                                      |
-| [wasp-payload-parser-oyster2](https://github.com/digicatapult/wasp-payload-parser-oyster2)     | A payload parsing service for Digital Matter Oyster2 devices                                                        |
-| [wasp-deti-power](https://github.com/digicatapult/wasp-deti-power)                             | A payload parsing service for Schneider Electric power meters                                                       |
+| [wasp-deti-power](https://github.com/digicatapult/wasp-deti-power)                             | A payload parsing service for Schneider Electric power meters                                                          |
 | [resolver-cache-datasource](https://github.com/digicatapult/resolver-cache-datasource)         | Resolver caching DataSource for Apollo GraphQL projects                                                                |
 | [apollo-type-validation-plugin](https://github.com/digicatapult/apollo-type-validation-plugin) | Directive base type validations for GraphQL queries                                                                    |
+
+### Inactive WASP repositories
+
+These WASP repositories are now deprecated.
+
+| Repository                                                                                   | Description                                                    |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| [wasp-payload-parser-template](https://github.com/digicatapult/wasp-payload-parser-template) | Template repository for bootstrapping new WASP payload parsers |
+| [wasp-thingy91](https://github.com/digicatapult/wasp-thingy91)                               | A payload parsing service for Thingy91 devices                 |
+| [wasp-service-template](https://github.com/digicatapult/wasp-service-template)               | Template repository for building new WASP services             |
+| [wasp-payload-parser-oyster2](https://github.com/digicatapult/wasp-payload-parser-oyster2)   | A payload parsing service for Digital Matter Oyster2 devices   |
 
 ## Contributing
 
