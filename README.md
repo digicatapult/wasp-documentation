@@ -1,5 +1,8 @@
 # **W**ide-**A**rea-**S**ensor-**P**latform (WASP)
 
+## Deprecation Notice
+`WASP` was deprecated on March 14th 2024, there will be no further dependency or security updates to this platform.
+
 `WASP` is the **W**ide-**A**rea-**S**ensor-**P**latform; an end-to-end solution for condition monitoring using `IoT` technology. The platform supports numerous device types with an extensible system for adding more. The platform is a complete `IoT` monitoring solution including features like:
 
 - Provisioning new devices (`things`)
